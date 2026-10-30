@@ -1,0 +1,144 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* MENU */
+header {
+    background-color: #202b3c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color: #65c9a5;
+}
+
+/* INÍCIO */
+.inicio {
+    background-color: #dceee8;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.inicio h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.inicio p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.botao {
+    background-color: #202b3c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: #65c9a5;
+    color: #202b3c;
+}
+
+/* SEÇÕES */
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #202b3c;
+}
+
+/* HABILIDADES */
+.habilidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* PROJETOS */
+.projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* CARDS */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* CONTATO */
+#contato {
+    background-color: #dceee8;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #202b3c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .inicio h2 {
+        font-size: 27px;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+}
